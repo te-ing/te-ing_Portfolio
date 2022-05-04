@@ -1,0 +1,23 @@
+.header {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+  cursor: pointer;
+}
+
+.header__circle {
+  border: solid 2px black;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+
+.header__title {
+  font-family: 'Domine', sans-serif;
+}
