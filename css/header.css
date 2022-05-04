@@ -9,6 +9,7 @@
   align-items: center;
   width: 400px;
   cursor: pointer;
+  z-index: 5;
 }
 
 .header__circle {

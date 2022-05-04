@@ -1,0 +1,65 @@
+.homePage {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../src/assets/home_background_Image.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.homePage__main {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+}
+.homePage__main__subtitle {
+  margin: 0 0 20px 10px;
+}
+.homePage__main__subtitle > h6:nth-child(3) {
+  font-weight: 600;
+}
+
+.homePage__main__title {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding-left: 10px;
+  margin-left: 10px;
+  border-left: 4px solid white;
+  gap: 10px;
+  font-weight: 400;
+}
+
+.homePage__main__title >h1:last-child {
+  font-weight: 600;
+}
+
+.homePage__nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.homePage__nav__button {
+  width: 120px;
+  height: 40px;
+  background: none;
+  border: 2px solid white;
+  border-radius: 30px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+.homePage__footer{
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 2px;
+  opacity: 20%;
+}
