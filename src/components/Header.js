@@ -4,7 +4,6 @@ export default function Header({ $target }) {
   $target.appendChild($header);
 
   $header.innerHTML = `
-  
     <div class="header__circle"></div>
     <h4 class="header__title">
     te-ing’s Portfolio
