@@ -1,0 +1,93 @@
+.resumePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  background: #FFEEDB;
+}
+
+.resumePage__main {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.resumePage__main__image {
+  width: 300px;
+  height: 200px;
+  margin-right: 60px;
+  background-image: url("../src/assets/resume_image.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.resumePage__main__info--title {
+  margin: 24px 0;
+  padding-left: 20px;
+  border-left: 4px solid black;
+}
+
+.resumePage__main__info--title :last-child {
+  font-weight: 600;
+}
+
+.resumePage__main__info--subtitle {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4px;
+  gap: 10px;
+  font-size: 0.8rem;
+}
+
+.resumePage__main__info--subtitle__github {
+  cursor: pointer;
+}
+
+.resumePage__main__info--subtitle__blog {
+  cursor: pointer;
+}
+
+.resumePage__sub {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  width: 600px;
+  gap: 20px;
+}
+
+/* EXPERIENCE & SKILLS  */
+.resumePage__sub > div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-height: 300px;
+  padding: 4px;
+  margin-bottom: 40px;
+}
+
+.resumePage__sub > div > h5{
+  font-weight: 600;
+}
+
+.resumePage__sub__experience__article {
+  margin: 4px 0 10px 4px;
+  font-size: 0.9rem;
+}
+
+.resumePage__sub__experience__article > p:nth-child(odd) {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.resumePage__sub__skills__article {
+  margin: 4px 0 10px 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.resumePage__sub__skills__article > p:nth-child(odd) {
+  margin-top: 8px;
+  font-size: 0.9rem;
+}

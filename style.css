@@ -3,10 +3,9 @@
 @import "./css/aside.css";
 @import "./css/homePage.css";
 @import "./css/resumePage.css";
-
 html {
   font-family: 'Noto Sans KR', sans-serif;
-  /* font-size: 16px; */
+  font-size: 16px;
 }
 
 /* 폰트 사이즈 */
