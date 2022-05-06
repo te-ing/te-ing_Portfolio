@@ -81,13 +81,23 @@
   font-weight: 500;
 }
 
-.resumePage__sub__skills__article {
+.resumePage__sub__skills__article__container {
+  display: flex;
+}
+
+.resumePage__sub__skills__article--text {
   margin: 4px 0 10px 4px;
   font-size: 0.8rem;
   font-weight: 500;
 }
 
-.resumePage__sub__skills__article > p:nth-child(odd) {
+.resumePage__sub__skills__article--text > p:nth-child(odd) {
   margin-top: 8px;
   font-size: 0.9rem;
+}
+
+.resumePage__sub__skills__article--image {
+  width: 2rem;
+  height: 2rem;
+  margin-top: 0.9rem;
 }

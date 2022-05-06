@@ -45,12 +45,16 @@ export default function ResumePage({ $target }) {
       </h5>
       <article class="resumePage__sub__skills__article">
         ${SKILLS.map(item =>`
-          <p>${item[0]}</p>
-          <p>${item[1]}</p>
+        <div class="resumePage__sub__skills__article__container" >
+        ${item[2] && `<img src=${item[2]} class="resumePage__sub__skills__article--image" />`}
+          <div class="resumePage__sub__skills__article--text">
+            <p>${item[0]}</p>
+            <p>${item[1]}</p>
+          </div>
+        </div>
         `).join('')}
       </article>
     </div>
-
   </section>
   `;
 }
