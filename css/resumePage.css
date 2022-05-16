@@ -75,7 +75,7 @@
 }
 
 .resumePage__sub__experience__article > p:nth-child(odd) {
-  margin: 10px 0 6px 0;
+  margin: 14px 0 6px 0;
   font-size: 1rem;
   font-weight: 500;
 }
@@ -92,11 +92,12 @@
 
 .resumePage__sub__skills__article--text > p:nth-child(odd) {
   margin-top: 8px;
+  margin-bottom: 6px;
   font-size: 1.25rem;
 }
 
 .resumePage__sub__skills__article--image {
   width: 2rem;
   height: 2rem;
-  margin-top: 0.9rem;
+  margin: 1rem 4px 0 0;
 }
