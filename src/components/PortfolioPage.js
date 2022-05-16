@@ -1,46 +1,45 @@
-export default function PortfolioPage({ $target }) {
+import ProjectImage from "./ProjectImage.js";
+import ProjectText from "./ProjectText.js";
+
+export default function PortfolioPage({ $target, PROJECTS }) {
   const $portfolioPage = document.createElement("div");
   $portfolioPage.classList = "portfolioPage"
   $target.appendChild($portfolioPage);
 
-  $portfolioPage.innerHTML = `
-  <h4 class="portfolioPage__header">
-    PROJECTS
-  </h4>
-  <section class="portfolioPage__projects">
-    <article class="project">
-      <div class="project__header"> 
-        <h5 class="project__header__main">기부매칭 서비스 Need it</h5>
-        <span class="project__header__sub"> 2021.12 ( Front 4 / Back 3 ) </span>
-      </div>
-      <div class="project__content">
-        <div class="project__content__image">
-          <div class="project__content__image__container"></div>
-          <span class="project__content__image__page">1 / 4</span>
-          <span class="project__content__image__page">클릭시 다음 페이지로 넘어갑니다</span>
-        </div>
-        
-        <div class="project__content__text">
-          <div class="project__content__text__header">
-            <h5>Need it</h5>
-            <div class="project__content__text__header--links">
-              <span>GitHub</span>
-              <span>배포링크</span>
-              <span>회고링크</span>
-            </div>
-          </div>
-
-          <div class="project__content__text__main">
-            <p>한줄 소개 :</p>
-            <p>사용 기술 :</p>
-            <p>주요 기능 :</p>
-            <p>역할 :</p>
-            <p>Learn :</p>
-          </div>
-        </div>
-      </div>
-    </article>
-
-  </section>
-  `;
+  $portfolioPage.innerHTML =
+    PROJECTS.map((project) => {
+      return `
+    <section class="portfolioPage__projects">
+      <article class="project">
+        <div class="project__header"> 
+          <h5 class="project__header__main">${project.header}</h5>
+          <span class="project__header__sub">${project.subHeader}</span>
+        </div> 
+        <div class="project__content">
+          ${ProjectImage(project)}
+          ${ProjectText(project)}
+      </article>
+  
+    </section>
+    `;
+    }).join('')
+  
+  /* 프로젝트 이미지 slide */
+  const images = document.querySelectorAll(".project__content__image");
+  images.forEach(image => image.addEventListener('click', (e) => {
+    const slides = e.currentTarget.children[0];
+    if (e.target.className === "project__content__image--prev") {
+      if (Number(slides.style.left.slice(1, -2)) === 0) {
+        slides.style.left = `-${300 * (slides.children.length-1)}px`;
+      } else {
+        slides.style.left = `-${Number(slides.style.left.slice(1,-2)) - 300}px`;
+      }
+    } else {
+      if (Number(slides.style.left.slice(1, -2)) === 300 * (slides.children.length-1)) {
+        slides.style.left = 0;
+      } else {
+        slides.style.left = `-${Number(slides.style.left.slice(1,-2)) + 300}px`; 
+      }
+    }
+  }));
 }
