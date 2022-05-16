@@ -4,7 +4,7 @@ export default function ProjectText(project) {
   return `
     <div class="project__content__text">
       <div class="project__content__text__header">
-        <h5>${project.title}</h5>
+        <h5 class="project__content__text__header--title">${project.title}</h5>
         <div class="project__content__text__header--links">
         ${project.github ? `<a href=${project.github}> ✔ GitHub</a>` : ""}
         ${project.publish ? `<a href=${project.publish}> ✔ 배포링크</a>` : ""}

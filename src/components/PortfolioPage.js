@@ -12,7 +12,7 @@ export default function PortfolioPage({ $target, PROJECTS }) {
     <section class="portfolioPage__projects">
       <article class="project">
         <div class="project__header"> 
-          <h5 class="project__header__main">${project.header}</h5>
+          <h4 class="project__header__main">${project.header}</h4>
           <span class="project__header__sub">${project.subHeader}</span>
         </div> 
         <div class="project__content">

@@ -33,7 +33,7 @@
 }
 
 .project__header__main {
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .project__header__sub {
@@ -42,7 +42,6 @@
 
 .project__content {
   display: flex;
-  /* margin: 20px 0; */
 }
 
 .project__content__image {
@@ -112,6 +111,10 @@
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 10px;
+}
+
+.project__content__text__header--title {
+  font-weight: 600;
 }
 
 .project__content__text__main {
