@@ -7,8 +7,9 @@ export default function PortfolioPage({ $target, PROJECTS }) {
   $target.appendChild($portfolioPage);
 
   $portfolioPage.innerHTML =
-    PROJECTS.map((project) => {
+    PROJECTS.map((project, idx) => {
       return `
+    ${idx == 0 ? `<h3 class="portfolioPage__header">PROJECTS</h3>` : ""}
     <section class="portfolioPage__projects">
       <article class="project">
         <div class="project__header"> 
