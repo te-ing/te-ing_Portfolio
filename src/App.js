@@ -20,5 +20,5 @@ export default function App({ $target }) {
     console.log(location)
     window.scrollTo({ top: location, behavior: "smooth" });
   };
-  scrollMove();
+  // scrollMove();
 }
