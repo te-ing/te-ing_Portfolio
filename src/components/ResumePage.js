@@ -34,8 +34,8 @@ export default function ResumePage({ $target }) {
       </h4>
       <article class="resumePage__sub__experience__article">
         ${EXPERIENCE.map(item => `
-          <p>${item[0]}</p>
-          <p>${item[1]}</p>
+          <p>${item.period}</p>
+          <p>${item.work}</p>
         `).join('')}
       </article>
     </div>
@@ -46,10 +46,10 @@ export default function ResumePage({ $target }) {
       <article class="resumePage__sub__skills__article">
         ${SKILLS.map(item =>`
         <div class="resumePage__sub__skills__article__container" >
-        ${item[2] && `<img src=${item[2]} class="resumePage__sub__skills__article--image" />`}
+        ${item.image && `<img src=${item.image} class="resumePage__sub__skills__article--image" />`}
           <div class="resumePage__sub__skills__article--text">
-            <p>${item[0]}</p>
-            <p>${item[1]}</p>
+            <p>${item.skill}</p>
+            <p>${item.content}</p>
           </div>
         </div>
         `).join('')}
