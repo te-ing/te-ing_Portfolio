@@ -1,5 +1,6 @@
+import { formattingText } from '../utiles/utile.js'
+
 export default function ProjectText(project) {
-  const formattedLearn = project.learn.split("\n").map(v => v.trim()).join("<br>");
   
   return `
     <div class="project__content__text">
@@ -18,7 +19,7 @@ export default function ProjectText(project) {
         <p>✔ 주요 기능 : ${project.function}</p>
         ${project.role ? `<p>✔ 역할 : ${project.role}</p>` : ""}
         <p>✔ Learn :
-          <p>${formattedLearn}</p>
+          <p>${formattingText(project.learn)}</p>
         </p>
       </div>
     </div>
