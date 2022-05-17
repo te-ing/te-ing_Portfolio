@@ -1,0 +1,98 @@
+.aboutMePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #DBFFE1;
+}
+
+.aboutMePage__header {
+  margin-top: 60px;
+  padding: 10px;
+  border-bottom: 4px solid black;
+  font-weight: 800;
+}
+
+.aboutMePage__article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+  max-width: 1200px;
+  min-width: 800px;
+  padding: 60px;
+}
+
+.aboutMePage__article__image {
+  width: 40%;
+  object-fit: fill;
+}
+
+.aboutMePage__article__text {
+  max-width: 80%;
+  padding-left: 60px;
+  line-height: 1.5;
+}
+
+.aboutMePage__article__text--title {
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.aboutMePage__footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.aboutMePage__footer__left {
+  padding: 40px 60px
+}
+
+.aboutMePage__footer__left--title {
+  font-family: "Domine";
+  margin-bottom: 20px;
+}
+
+.aboutMePage__footer__left--body {
+  margin-left: 10px;
+  line-height: 1.5;
+}
+
+.aboutMePage__footer__left--body:nth-child(3) {
+  font-weight: 800;
+}
+
+.aboutMePage__footer__button {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 10px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.aboutMePage__footer__right {
+  padding: 30px 40px;
+}
+
+.aboutMePage__footer__right--mainTitle {
+  font-weight: 600;
+  color: #FFCE53;
+  margin-bottom: 4px;
+}
+
+.aboutMePage__footer__right--subTitle {
+  font-family: "Domine";
+  margin-bottom: 20px;
+  color: #FFCE53;
+}
+
+.aboutMePage__footer__right--body {
+  line-height: 2;
+}

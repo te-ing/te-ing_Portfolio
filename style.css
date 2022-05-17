@@ -4,6 +4,7 @@
 @import "./css/homePage.css";
 @import "./css/resumePage.css";
 @import "./css/portfolioPage.css";
+@import "./css/aboutMePage.css";
 
 html {
   font-family: 'IBM Plex Sans', 'Noto Sans', sans-serif;

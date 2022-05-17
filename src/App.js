@@ -4,6 +4,7 @@ import HomePage from "./components/HomePage.js";
 import ResumePage from "./components/ResumePage.js";
 import PortfolioPage from "./components/PortfolioPage.js";
 import { PROJECTS } from "./constants/projects.js";
+import AboutMePage from "./components/AboutMePage.js";
 
 export default function App({ $target }) {
   const header = new Header({ $target });
@@ -11,14 +12,15 @@ export default function App({ $target }) {
   const homePage = new HomePage({ $target });
   const resumePage = new ResumePage({ $target });
   const portfolioPage = new PortfolioPage({ $target, PROJECTS });
+  const aboutMePage = new AboutMePage({ $target });
 
   /* 개발용 임시함수 */
   console.log(document.querySelector(".portfolioPage"))
   const scrollMove = () => {
-    let location = document.querySelector(".portfolioPage").offsetHeight;
-    // let location = document.querySelector(".portfolioPage").offsetTop
+    // let location = document.querySelector(".portfolioPage").offsetHeight;
+    let location = document.querySelector(".aboutMePage").offsetTop
     console.log(location)
     window.scrollTo({ top: location, behavior: "smooth" });
   };
-  // scrollMove();
+  scrollMove();
 }
