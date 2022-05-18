@@ -6,6 +6,7 @@ import PortfolioPage from "./components/PortfolioPage.js";
 import { PROJECTS } from "./constants/projects.js";
 import AboutMePage from "./components/AboutMePage.js";
 import { pageScroll } from "/src/utiles/utile.js";
+import Footer from "./components/Footer.js";
 
 export default function App({ $target }) {
   const header = new Header({ $target });
@@ -14,6 +15,7 @@ export default function App({ $target }) {
   const resumePage = new ResumePage({ $target });
   const portfolioPage = new PortfolioPage({ $target, PROJECTS });
   const aboutMePage = new AboutMePage({ $target });
+  const footer = new Footer({ $target })
 }
 
 const scroll = window.onload = () => {
