@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   background: #DBFFE1;
+  padding-bottom: 60px;
 }
 
 .aboutMePage__header {
@@ -38,7 +39,7 @@
   font-weight: 800;
 }
 
-.aboutMePage__footer {
+.footer {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -48,25 +49,25 @@
   color: white;
 }
 
-.aboutMePage__footer__left {
+.footer__left {
   padding: 40px 60px
 }
 
-.aboutMePage__footer__left--title {
+.footer__left--title {
   font-family: "Domine";
   margin-bottom: 20px;
 }
 
-.aboutMePage__footer__left--body {
+.footer__left--body {
   margin-left: 10px;
   line-height: 1.5;
 }
 
-.aboutMePage__footer__left--body:nth-child(3) {
+.footer__left--body:nth-child(3) {
   font-weight: 800;
 }
 
-.aboutMePage__footer__button {
+.footer__button {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
@@ -77,22 +78,22 @@
   cursor: pointer;
 }
 
-.aboutMePage__footer__right {
+.footer__right {
   padding: 30px 40px;
 }
 
-.aboutMePage__footer__right--mainTitle {
+.footer__right--mainTitle {
   font-weight: 600;
   color: #FFCE53;
   margin-bottom: 4px;
 }
 
-.aboutMePage__footer__right--subTitle {
+.footer__right--subTitle {
   font-family: "Domine";
   margin-bottom: 20px;
   color: #FFCE53;
 }
 
-.aboutMePage__footer__right--body {
+.footer__right--body {
   line-height: 2;
 }
