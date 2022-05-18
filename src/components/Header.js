@@ -5,10 +5,9 @@ export default function Header({ $target }) {
 
   $header.innerHTML = `
     <div class="header__circle"></div>
-    <h4 class="header__title">
+    <h4 class="header__title header--scroll">
     te-ing’s Portfolio
     </h4>
     <div class="header__circle"></div>
   `;
-
 }
