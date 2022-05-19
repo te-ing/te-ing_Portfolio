@@ -18,11 +18,10 @@
 }
 
 .homePage__main__image {
-  color: red;
   width: 60vw;
   height: 19vw;
-  max-width: 900px;
-  max-height: 280px;
+  max-width: 700px;
+  max-height: 240px;
   background-image: url("../src/assets/mainTitle.png");
   background-size: contain;
   background-position: center;
